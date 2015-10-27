@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="rezervirajMasa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="datum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Vreme" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="brLica" type="s:short" />
+            <s:element minOccurs="1" maxOccurs="1" name="RestoranID" type="s:short" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="rezervirajMasaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="rezervirajMasaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="dodadiVoRezervacija">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="masiId" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="Datum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Vreme" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RestoranID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Baranje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="dodadiVoRezervacijaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="dodadiVoRezervacijaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="rezervirajMasaSoapIn">
+    <wsdl:part name="parameters" element="tns:rezervirajMasa" />
+  </wsdl:message>
+  <wsdl:message name="rezervirajMasaSoapOut">
+    <wsdl:part name="parameters" element="tns:rezervirajMasaResponse" />
+  </wsdl:message>
+  <wsdl:message name="dodadiVoRezervacijaSoapIn">
+    <wsdl:part name="parameters" element="tns:dodadiVoRezervacija" />
+  </wsdl:message>
+  <wsdl:message name="dodadiVoRezervacijaSoapOut">
+    <wsdl:part name="parameters" element="tns:dodadiVoRezervacijaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSRezervaciiSoap">
+    <wsdl:operation name="rezervirajMasa">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Rezervacii</wsdl:documentation>
+      <wsdl:input message="tns:rezervirajMasaSoapIn" />
+      <wsdl:output message="tns:rezervirajMasaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="dodadiVoRezervacija">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Rezervacii</wsdl:documentation>
+      <wsdl:input message="tns:dodadiVoRezervacijaSoapIn" />
+      <wsdl:output message="tns:dodadiVoRezervacijaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSRezervaciiSoap" type="tns:WSRezervaciiSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="rezervirajMasa">
+      <soap:operation soapAction="http://tempuri.org/rezervirajMasa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodadiVoRezervacija">
+      <soap:operation soapAction="http://tempuri.org/dodadiVoRezervacija" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSRezervaciiSoap12" type="tns:WSRezervaciiSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="rezervirajMasa">
+      <soap12:operation soapAction="http://tempuri.org/rezervirajMasa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="dodadiVoRezervacija">
+      <soap12:operation soapAction="http://tempuri.org/dodadiVoRezervacija" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSRezervacii">
+    <wsdl:port name="WSRezervaciiSoap" binding="tns:WSRezervaciiSoap">
+      <soap:address location="http://student.labs.ii.edu.mk/ii12237/WSRezervacii.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSRezervaciiSoap12" binding="tns:WSRezervaciiSoap12">
+      <soap12:address location="http://student.labs.ii.edu.mk/ii12237/WSRezervacii.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

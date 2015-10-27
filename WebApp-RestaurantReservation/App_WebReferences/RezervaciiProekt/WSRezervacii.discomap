@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://student.labs.ii.edu.mk/ii12237/WSRezervacii.asmx?wsdl" filename="WSRezervacii.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://student.labs.ii.edu.mk/ii12237/WSRezervacii.asmx?disco" filename="WSRezervacii.disco" />
+  </Results>
+</DiscoveryClientResultsFile>

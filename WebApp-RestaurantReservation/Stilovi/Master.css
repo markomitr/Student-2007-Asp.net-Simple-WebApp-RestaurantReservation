@@ -1,0 +1,163 @@
+﻿a
+{
+	text-decoration:none;
+}
+input[type=submit],button
+{
+	border:none;
+	border:1px solid #c39400;
+	padding:2px;
+	margin-right:2px;
+}
+input[type=submit]:hover
+{
+	background-color:Orange;
+	
+}
+input[type=text]
+{
+	width:200px;
+	height:25px;
+	font-size:1.2em;
+	color:Gray;
+	padding:3px;
+}
+textarea
+{
+	width:200px;
+	height:50px;
+	color:Gray;
+}
+img
+{
+	margin:0;
+	padding:0;
+}
+body
+{
+	margin:5px auto;
+	padding:0 20px;
+	width:100%;
+	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:small;
+}
+#header
+{
+	width:90%;
+}
+#drzac
+{
+	width:800px;
+	clear:both;
+	margin-top:10px;
+	margin:auto;
+}
+#Levo
+{
+
+	border-bottom:4px solid #c39400;
+	background:transparent url(../Images/LeftGore.gif) no-repeat scroll 0 0; 
+	width:180px;
+	float:left;
+}
+#Levo img
+{
+	margin-top:10px;
+}
+#Sodrzina
+{
+	/*background:transparent url(../Images/ContentGore.gif) no-repeat scroll 0 0; */
+	border-bottom:4px solid #c39400;
+	float:left;
+	margin-left:10px;
+	width:600px;
+	height:580px;
+	padding:10px 0 0 0 ;
+}
+#footer
+{
+	width:100%;
+	clear:both;
+	margin-top:30px;
+	font-size:x-small;
+}
+.celo
+{
+	border-top:4px solid #c39400;
+	background-color:#f4e1ab;
+	min-height:580px;
+}
+.celoL
+{
+	border-top:4px solid #c39400;
+	background-color:#f4e1ab;
+	min-height:435px;
+}
+#MeniLevo
+{
+	width:180px;
+	float:left;
+	padding:0px;
+}
+#MeniLevo li
+{
+	list-style:none;
+	border-bottom:solid 3px #c39400;
+	float:left;
+	width:180px;
+	display:inline-block;
+}
+#MeniLevo li a
+{
+	color:Gray;
+	font-size:1.2em;
+	padding-left:25px;
+	display:block;
+	width:175px;
+}
+#MeniLevo li:hover
+{
+	background-color:Orange;
+}
+/*
+.selektiranRed
+{
+	background-color:#EDAE44;
+}
+#podatociDiv th,#narackaLista th
+{
+	border:1px solid #121421;
+	color:#7C583D;
+	background:#EDAE44;
+}
+.narackaMeni a
+{
+ text-decoration:none;
+ display:inline-block;
+ width:120px;
+ border: 1px solid #c39400;
+ margin-left:1px;
+ background-color:#E8E8E8;
+ color:Black;
+ padding:2px;
+ padding-left:5px;
+}
+.narackaMeni a:hover
+{
+ background-color:White;
+}
+.narackaPrva
+{
+	margin-top:70px;
+	margin-left:70px;
+}
+.naslovCrta
+{
+  border-bottom: 1px #c8c9cb;
+  border-bottom-style: double;
+  font-family:Verdana;
+  font-size:15px;
+  color: #778087;
+  margin-bottom:5px;
+}
+*/

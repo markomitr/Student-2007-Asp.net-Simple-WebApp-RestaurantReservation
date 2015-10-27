@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterRestoran.master.cs" Inherits="MasterRestoran" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Stilovi/Master.css" rel="stylesheet" type="text/css" />
+    <link href="Stilovi/Stil.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">   
+    </div>
+   
+    <div id="drzac">
+         <div id="Levo">
+            <img class="slikaLogo" src="Images/LogoRestoran.gif" />
+            <div class="celoL"> 
+            <ul id="MeniLevo">
+            <li><a href="Doma.aspx">Дома</a></li>
+            <li><a href="Rezervacii.aspx">Резервација</a></li>
+            <li><a href="Proekt.aspx">За Проектот</a></li>
+            </ul>
+            </div>
+         </div>
+          <div id="Sodrzina">
+              <div class="celo">
+                  <div>
+                      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                      </asp:ContentPlaceHolder>
+                  </div>
+              </div>
+          </div>
+             <div id="footer">ИТехно 2010</div>
+     </div>
+     
+
+    </form>
+</body>
+</html>

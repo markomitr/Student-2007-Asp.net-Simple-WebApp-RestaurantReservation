@@ -1,0 +1,107 @@
+﻿.greskaServer
+{
+	width:auto;
+	background-color:Red;
+	font-size:1.2em;
+	color:White;
+	/*
+	bottom:0px;
+	left:0px;
+	position:fixed;
+	*/
+	display:none;
+}
+.statusInfo
+{
+	width:auto;
+	background-color:Green;
+	font-size:1.0em;
+	color:White;
+	/*
+	bottom:0px;
+	right:0px;
+	position:fixed;
+	*/
+	display:none;
+}
+.restoraniRez
+{
+	height:25px;
+	width:150px;
+	color:Gray;
+	font-size:1.2em;
+}
+.vremeRez
+{
+	height:25px;
+	width:50px;
+	color:Gray;
+	font-size:1.2em;
+}
+.slikaRez
+{
+
+}
+.tdKopcinja input
+{
+	float:right;
+	height:25px;
+	width:100px;
+	font-size:1.1em;
+	color:Gray;
+}
+.validatorGreski div
+{
+	color:Maroon;
+	font-size:1em;
+}
+.validatorGreski ul li
+{
+	color:Maroon;
+	font-size:1em;
+	list-style:none;
+	margin-left:5px;
+	list-style-type:square;
+	display:inline-block;
+	border-bottom:dashed 1px Red;
+}
+.naslov,h1
+{
+	text-align:center;
+	color:Gray;
+	font-family:Verdana;
+	font-size:1em;
+}
+.appOpis
+{
+	padding:3px;
+	color:Gray;
+}
+.tekstDoma
+{
+	padding:3px;
+	color:Gray;
+	font-size:1em;
+}
+#slikiDoma img
+{
+	margin-left:100px;
+
+}
+.Naslovna
+{
+  border-bottom: 1px Gray;
+  border-bottom-style: dashed;
+  color: Gray;
+  margin-bottom:5px;
+  margin-top:5px;
+  font-size:1em;
+  font-style:italic;
+  font-family: Georgia, Times New Roman, Times, serif;
+}
+#slikiProekt img
+{
+	margin-left:100px;
+	height:50px;
+	width:100px;
+}
